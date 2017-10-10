@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock title %}
+
+{% block content %}
+	<div class="background">
+		{% if infoList|count == 0 %}
+		<h1>No entries!</h1>
+		{%endif%}
+		
+	{%for comment in infoList %}
+		<p class="guests">
+		<b>{{comment.name}}</b>
+		<b>{{comment.surname}}</b>
+		{{comment.email}}
+		</p>
+		<p>
+		<b>{{comment.message}}</b>
+		<br>
+		{{comment.nastanek}}
+		<br>
+		<a class="bonusInfo" href="/check/{{comment.key.id()}}/restore"> Restore</a> |
+		<a class="bonusInfo" href="/check/{{comment.key.id()}}/permanentlyDelete"> Permanently delete</a>
+		<br>
+		</p>
+	{%endfor%}
+	</div>
+{% endblock content %}

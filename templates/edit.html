@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock title %}
+
+{% block content %}
+	<div class="background">
+		<div id="messageForm">
+			<h3 id="sub-title">Edit message!</h3>
+			<form action="/check/{{comment.key.id()}}/edit" method="post">
+				<p class="guests">
+					Guest: 
+					{% if comment.name == "" %}
+						anonymous
+					{% else %}
+					{{comment.name}}
+					{{comment.surname}}<br>
+					{% endif%}
+				</p>
+				<br>Message:<br>
+				<textarea class="editForm" cols="50" rows="5" name="message" required>{{comment.message}}</textarea><br>
+				<input type="submit" value="Submit the message!">
+			</form>
+		</div>
+		<a class="bonusInfo" href="/guestbook">Return</a>
+	</div>
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock title %}
+
+{% block content %}
+	<div class="background">
+		<h3 id="sub-title">Message information</h3>
+		<br><br>
+		<p class="guests">Name:{{comment.name}}</p><br>
+		<p>Last name: {{comment.surname}}</p><br>
+		<p>email: {{comment.email}}</p><br>
+		<p>Message: <br><b>"{{comment.message}}"</b></p><br>
+		<p>Date: <br>{{comment.nastanek}}</p><br>
+
+		<a class="bonusInfo" href="/guestbook">Return</a>
+	</div>
+{% endblock content %}

@@ -1,0 +1,157 @@
+* {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: auto;
+    font-family: 'Lobster Two', cursive; /*Titles*/
+	font-family: 'Poiret One', cursive; /*Paragraphs*/
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 43.55em;
+	font-family: 'Lobster Two', cursive; /*Titles*/
+	background: url("../images/mainCover.jpg");
+	background-size: 100% 100%;
+}
+
+nav {
+	width: 100%;
+	background-color: black;
+	opacity: 0.4;
+	box-sizing: border-box;
+}
+
+
+li {
+	display:inline;
+}
+a {
+	text-decoration:none;
+	display: inline-block;
+	color: white;
+	padding: 2em;
+}
+
+a:hover {
+	background-color: grey;
+	color: black;
+	transition: 1s;
+}
+
+#title {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);; /* IE 9 */
+    -webkit-transform: translate(-50%,-50%);; /* Safari */
+    transform: translate(-50%,-50%);
+    color: beige;
+}
+
+
+#main-title {
+	font-size: 5em;
+}
+
+#sub-title {
+	font-size: 3em;
+	display:inline;
+}
+
+
+.decoration {
+	position: relative;
+	bottom:0.5em;
+	display: inline-block;
+	width: 4em;
+	height: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
+	border-top: solid beige 5px;
+	border-bottom: solid beige 5px;
+}
+
+#messageForm {
+	margin-top: 2em;
+	width: 100%;
+	text-align: center;
+}
+
+form p {
+	color: white;
+}
+
+textarea {
+	border:none;
+	resize:none;
+}
+
+input,textarea{
+	margin: 1em;
+	padding: 1em;
+	outline:none;
+	border-radius: 5px;
+	border:none;
+	width: 30%;
+	font-family: 'Lobster Two', cursive; /*Titles*/
+}
+
+input[type="submit"] {
+	background-color: maroon;
+	color:white;
+}
+
+input[type="submit"]:hover {
+	background-color: grey;
+	transition: 0.5s;
+}
+
+.background {
+	width: 70%;
+	height: 65%;
+	margin: 2em auto;
+	padding: 2em;
+	background-color: white;
+	border-radius:5px;
+	text-align: center;
+	overflow-y: scroll;
+}
+
+.guests {
+	color: maroon;
+	font-size: 15px;
+}
+
+.bonusInfo {
+	color: black;
+	padding:0;
+	margin-bottom: 1em;
+}
+
+.bonusInfo:hover {
+	color:maroon;
+	background-color: white;
+	text-decoration: underline;
+}
+
+.editForm {
+	box-shadow: 1px 5px 8px black;
+}
+footer {
+	position:absolute;
+	bottom:0;
+	width: 100%;
+	padding: 2em;
+	background-color: black;
+	opacity: 0.4;
+	color: white;
+}

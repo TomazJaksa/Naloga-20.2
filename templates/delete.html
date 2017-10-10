@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock title %}
+
+{% block content %}
+	<div class="background">
+		<div id="messageForm">
+			<h3 id="sub-title">Delete message?</h3>
+			<p class="guests">Are you sure you wish to delete this comment?</p>
+			<form action="/check/{{comment.key.id()}}/delete" method="post">
+				<input type="submit" value="I am sure. Delete!">
+			</form>
+		</div>
+		<a class="bonusInfo" href="/guestbook">I'd rather not...</a>
+	</div>
+{% endblock content %}
